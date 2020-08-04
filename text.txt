@@ -1,0 +1,2 @@
+hi this app was created in python
+this app target is to make app similar to typing apps which tells speed and accuracy of typing
