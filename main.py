@@ -1,24 +1,36 @@
 import time
+from os import system,name
+
+def clear():
+    if name == 'nt':
+        _ = system('cls')
+    else:
+        _ = system('clear')
+
 
 AVERAGE_LETTERS_IN_WORDS = 5
-with open("text.txt") as f:
+with open("text.txt",'r') as f:
     target_text = f.read()
-
+clear()
 target_pars = target_text.split("\n")
 correct_letters = 0
 wrong_letters = 0
 elapsed_time = 0
+lines=[]
+for para in target_pars:
+    lines.extend(para.split(". "))
 print("hi welcome are you ready to take test")
 _ = input("then press enter")
-
-for target_para in target_pars:
-    splited_target = target_para.split(" ")
-    print(target_para)
+for line in lines:
+    clear()
+    splited_target = line.split(" ")
+    print(line)
     start_time = time.time()
     typed_text = input()
     stop_time = time.time()
     count = 0
-    for word in typed_text.split(" "):
+    typed_text_split=typed_text.split(" ")
+    for word in typed_text_split:
         try:
             if word == splited_target[count]:
                 correct_letters += len(word)
