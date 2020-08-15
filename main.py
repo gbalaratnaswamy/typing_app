@@ -1,6 +1,7 @@
 import time
 from os import system,name
 
+
 def clear():
     if name == 'nt':
         _ = system('cls')
@@ -40,7 +41,6 @@ for line in lines:
             break
         count += 1
     elapsed_time += stop_time - start_time
-
 total_letters = correct_letters + wrong_letters
 wrong_words = wrong_letters / AVERAGE_LETTERS_IN_WORDS
 correct_words = correct_letters / AVERAGE_LETTERS_IN_WORDS
