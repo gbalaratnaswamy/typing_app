@@ -1,2 +1,3 @@
-hi this app was created in python
-this app target is to make app similar to typing apps which tells speed and accuracy of typing
+Aesop was one of the great Greek writers. He is best known for his fables, stories that have a moral. They teach us something about how we should live our lives. Aesop wrote thousands of these stories. Here are a few.
+The Wolf in Sheep’s Clothing
+Once upon a time , a Wolf decided to disguise the way he looked. He thought it would help him get food more easily. He put on the skin of a sheep,....
